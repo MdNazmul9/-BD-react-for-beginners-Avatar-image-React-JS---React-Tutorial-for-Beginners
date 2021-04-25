@@ -69,3 +69,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # -BD-react-for-beginners-Avatar-image-React-JS---React-Tutorial-for-Beginners
+
+
+1. Pass Data
+2. Raise and Handle Event
+3. Multiple Components in Sync
+4. Fucntional Components
+6. Lifecycle Hooks
