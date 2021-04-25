@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 class Counter extends Component {
     state = {
-        count: 1,
+        count: 0,
         
 
     };
@@ -15,7 +15,9 @@ class Counter extends Component {
     // }
    
     handleIncrement = () => {
-        console.log("Inclement Clicked", this);
+        
+        this.setState({count:this.state.count+1})
+        // console.log("Inclement Clicked", this);
         //obj.method();
         //function();
     }
