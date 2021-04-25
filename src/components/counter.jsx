@@ -7,9 +7,16 @@ class Counter extends Component {
         
 
     };
+
+    constructor() {
+        super();
+        console.log("Constructor", this)
+    }
    
     handleIncrement(){
         console.log("Inclement Clicked", this);
+        //obj.method();
+        //function();
     }
 
     render() { 
