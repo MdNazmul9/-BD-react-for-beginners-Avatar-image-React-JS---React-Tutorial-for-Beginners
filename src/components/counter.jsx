@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 class Counter extends Component {
     state = {
-        count: this.props.value
+        value: this.props.value
         
     };
 
@@ -11,16 +11,18 @@ class Counter extends Component {
     handleIncrement = (product) => {
         console.log(product)
         
-        this.setState({ count: this.state.count + 1 })
+        this.setState({ value: this.state.value + 1 })
         
     }
   
 
     render() { 
+        console.log(this.props)
             
         return (
             <div> 
                 {/* <h1>Hello world</h1> */}
+                {this.props.children}
                 <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
                 
                 <button
@@ -34,13 +36,13 @@ class Counter extends Component {
     }
     getBadgeClasses() {
         let classes = 'badge m-2 badge-';
-        classes += this.state.count === 0 ? "warning" : "primary";
+        classes += this.state.value === 0 ? "warning" : "primary";
         return classes;
     }
 
     formatCount(){
-        const { count } = this.state;
-        return count === 0 ? 'Zero' : this.state.count;
+        const { value: count } = this.state;
+        return count === 0 ? 'Zero' : this.state.value;
     }
 }
  
