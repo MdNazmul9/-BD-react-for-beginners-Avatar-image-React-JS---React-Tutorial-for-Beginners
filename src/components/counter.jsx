@@ -17,12 +17,12 @@ class Counter extends Component {
   
 
     render() { 
-        console.log(this.props)
             
         return (
             <div> 
                 {/* <h1>Hello world</h1> */}
-                {this.props.children}
+                {/* {this.props.children} Same result */}
+                <h4>{this.props.id}</h4>
                 <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
                 
                 <button
