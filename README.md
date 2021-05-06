@@ -76,3 +76,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 3. Multiple Components in Sync
 4. Fucntional Components
 6. Lifecycle Hooks
+    --> MOUNT
+        -->constructor
+        -->render
+        -->componentDidMount
+
+    --> UPDATE
+        -->render
+        -->componentDidUpdate
+    --> UNMOUNT
+        -->componentWillUnmount
